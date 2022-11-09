@@ -1,0 +1,17 @@
+.product-tile-containter {
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    &__tile {
+        padding-right: 10px;
+        display: inline-block;
+        width: 33%;
+        img {
+            width: 100%;
+            max-width: 100%
+        }
+        &:last-child {
+            padding-right: 0px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+<div class="product-tiles-containter">
+  <div class="product-tiles-containter-wrapper">
+    <div
+      class="product-tiles-containter-wrapper__tiles"
+      *ngFor="let image of imageObject; index as i"
+    >
+      <a
+        href="/home"
+        target=""
+        class="tiles-content"
+        pagetype="c"
+      >
+        <picture class="tiles-content__image" aria-hidden="true"
+          ><img src="{{ image.image }}" alt="{{ image.alt }}" class="" />
+        </picture>
+        <div class="tiles-content__text">
+          <div class="text-container">
+            <div class="text-container-content">
+              <h2 class="">Trekking Pants &amp; Shorts</h2>
+              <span class="">Starting From</span>
+            </div>
+            <div class="text-container-cta">
+              <div class="text-container-cta-price"><span class="">₹</span><span>699</span></div>
+              <div class="text-container-cta-explore">
+                <span>Explore Now</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

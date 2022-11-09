@@ -1,0 +1,14 @@
+<div>
+    <form class="login">
+        <div class="login-container">
+            <label>Username : </label>
+            <input type="text" placeholder="Enter Username" [(ngModel)]="model.userid" name="userid" required />
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" [(ngModel)]="model.password" name="password" required />
+            <button type="submit" (click)="login()">Login</button>
+            <!-- <input type="checkbox" checked="checked" /> Remember me -->
+            <button type="button" routerLink="/home" class="cancelbtn">Cancel</button>
+            <!-- <a href="#">Forgot password? </a> -->
+        </div>
+    </form>
+</div>

@@ -1,0 +1,61 @@
+.product-tiles-containter {
+  padding: 10px 10px;
+
+  &-wrapper {
+    display: flex;
+    // background-color: red;
+
+    &__tiles {
+      width: 25%;
+      margin-right: 10px;
+      display: inline-block;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  .tiles-content {
+    &__image {
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 0.75rem;
+      }
+    }
+
+    &__text {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      .text-container {
+        color: black;
+
+        &-content {}
+
+        &-cta {
+          display: flex;
+          justify-content: space-around;
+          font-size: 12px;
+
+          &-price {
+            background-color: yellow;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: center;
+          }
+          &-explore {
+            background-color: blue;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

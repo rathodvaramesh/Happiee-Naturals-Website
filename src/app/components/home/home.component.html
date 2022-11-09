@@ -1,0 +1,24 @@
+<div class="slider-container" ref="carousel-section">
+    <div class="slider-container-left">
+        <p>
+            flex-shrink is basically looking at all the flex items in a flexible container to make sure they don’t overflow the parent. If the flex items can all fit next to each other without overflowing the flexible container, then flex-shrink won’t do anything
+            at all… it’s job is already done.
+        </p>
+    </div>
+    <div class="slider-container-right">
+        <div class="slider-container-right__left-arrow" (click)="onClickArrow(-1)">
+            <a class="prev">❮</a>
+        </div>
+        <div *ngFor="let image of imageObject; index as i" class="slider-container-right__slick-images">
+            <img src="{{ image.image }}" alt="{{ image.alt }}" [ngClass]="{
+          active: i + 1 === activeImage,
+          'in-active': i + 1 !== activeImage
+        }" />
+        </div>
+        <div class="slider-container-right__right-arrow" (click)="onClickArrow(1)">
+            <a class="next">❯</a>
+        </div>
+    </div>
+</div>
+<app-product-tile></app-product-tile>
+<app-product-tiles></app-product-tiles>
